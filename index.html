@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es-mx">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <header>
+        <h1>Encriptador de texto</h1>
+    </header>
+    <main>
+        <div class="contenedor">
+            <div class="seccion_entrada">
+                <h2>Ingrese el texto aqui</h2>
+                <textarea id="entrada_texto" placeholder="Ingrese el texto aqui"></textarea>
+                <p class="aviso">Solo letras minúsculas y sin acentos</p>
+                <div class="botones">
+                    <button id="boton_encriptar" class="boton color_oscuro">Encriptar</button>
+                    <button id="boton_desencriptar" class="boton color_claro">Desencriptar</button>
+                </div>
+            </div>
+            <div class="seccion_resultado" id="seccion_resultado">
+                <img src="assets/Doll.png" alt="Muñeco con una lupa" id="imagen_mensaje">
+                <p id="resultado_texto" class="letra_bold">Ningún mensaje fue encontrado</p>
+                <p class="letra_regular">Ingrese el texto que desea encriptar o desencriptar</p>
+                <button id="boton_copiar" style="display: none;">Copiar</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Alan Miguel Crispin Rivera - 2024</p>
+    </footer>
+    <script src="app.js"></script>
+</body>
+</html>
+
